@@ -13,8 +13,12 @@ body{
     margin: 0 auto;
     display: grid;
     grid-template-columns: 4% 6% 15% 6% 5% 10% 10% 10% 10% 20% 4%;
+}
 
-
+.wrapper > div{
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: contain;
 }
 
 .item{
@@ -23,11 +27,9 @@ body{
     padding: 10px;
 }
 
-.item:nth-child(even){
-    background: #168728
-}
 .headseparator{
     grid-column: span 11;
+    height: 100px;
 }
 
 .leftheadseparator {
@@ -71,4 +73,9 @@ body{
 .footer{
     grid-column: span 11;
     background: #ff6a00;
+}
+
+.headerimage{
+    background: url('port2.png');
+    background-size: contain;
 }
