@@ -1,14 +1,74 @@
- /* The animation code */
-@keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+*{
+    box-sizing: border-bbox;
+    margin: 0;
+    padding: 0;
 }
 
-/* The element to apply the animation to */
-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-} 
+body{
+    background: #ECF0F1
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4% 6% 15% 6% 5% 10% 10% 10% 10% 20% 4%;
+
+
+}
+
+.item{
+    background: #3184d7;
+    color: #000000;
+    padding: 10px;
+}
+
+.item:nth-child(even){
+    background: #168728
+}
+.headseparator{
+    grid-column: span 11;
+}
+
+.leftheadseparator {
+    grid-row: span 2;
+}
+
+.leftofportrait {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portrait{
+    grid-row: span 2;
+}
+
+.rightofportrait {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.abovemenu {
+    grid-column: span 6;
+}
+
+.rightofmenu {
+    grid-column: span 2;
+}
+
+.intermediateseparator{
+    grid-column: span 11;
+}
+
+.contentimage{
+    grid-column: span 3;
+}
+
+.contenttext{
+    grid-column: span 5;
+}
+
+.footer{
+    grid-column: span 11;
+    background: #ff6a00;
+}
